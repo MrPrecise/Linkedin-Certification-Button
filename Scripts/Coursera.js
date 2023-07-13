@@ -7,13 +7,9 @@
 // @match        https://www.coursera.org/account/accomplishments/verify/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=coursera.org
 // @grant        none
-<<<<<<< HEAD
 // @homepageURL  https://github.com/MrPrecise/Linkedin-Certification-Button/
 // @downloadURL  https://github.com/MrPrecise/Linkedin-Certification-Button/blob/main/Scripts/Coursera.js
 // @updateURL    https://github.com/MrPrecise/Linkedin-Certification-Button/blob/main/Scripts/Coursera.js
-=======
-// @downloadURL  https://github.com/MrPrecise/Linkedin-Certification-Button/blob/main/Scripts/Coursera.js
->>>>>>> 8cbe8e6b32342f9e8c93d8b7591d0677e4574a49
 // ==/UserScript==
 
 (function () {
