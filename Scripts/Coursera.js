@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Coursera certification button
+// @name         Coursera Certification Button
 // @namespace    Coursera
 // @version      1
 // @description  Adds a button on your coursera accomplishments page for spesific certifications. This button when clicked takes information from the site and adds it to the Linkedin Certification
