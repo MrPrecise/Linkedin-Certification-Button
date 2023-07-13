@@ -7,6 +7,7 @@
 // @match        https://www.coursera.org/account/accomplishments/verify/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=coursera.org
 // @grant        none
+// @downloadURL
 // ==/UserScript==
 
 (function () {
