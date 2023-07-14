@@ -26,8 +26,8 @@ More information about the table over and more, visit [LinkedIn Add To Profile](
 [Tampermonkey](https://www.tampermonkey.net/)
 
 ## Current Scripts
-[Coursera](https://github.com/MrPrecise/Linkedin-Certification-Button/blob/main/Scripts/Coursera.js)
-[Real Python](https://github.com/MrPrecise/Linkedin-Certification-Button/blob/main/Scripts/Real-Python.js)
+- [Coursera](https://github.com/MrPrecise/Linkedin-Certification-Button/blob/main/Scripts/Coursera.js)
+- [Real Python](https://github.com/MrPrecise/Linkedin-Certification-Button/blob/main/Scripts/Real-Python.js)
 
 ## Installation
 
