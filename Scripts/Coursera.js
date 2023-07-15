@@ -51,7 +51,7 @@
       "issueYear=" + new Date(Date.parse(date)).getFullYear() + "&";
 
     /**
-     * Save issueYear= and month parsed in by date .getMonth() will return only the year, and save it  as string for the final query
+     * Save issueYear= and month parsed in by date .getMonth() will return only the month, and save it  as string for the final query
      * getMonth() gives number from 0 to 11 hence the + 1 after getMonth()
      */
     const issueMonth =
@@ -85,10 +85,6 @@
       "afterbegin",
       `<div class="rc-ShareButtonWithModal rc-CertificateSharing__share-button"><button class="_1hx9z6hg"><span class="_1lutnh9y"><span class="_k5dnrzp cui-iconWrapper"></span>Add to LinkedIn</span></button></div>`
     );
-    buttonSection.onclick = function () {
-      addToLinkedIn();
-    };
-
     buttonSection.onclick = function () {
       addToLinkedIn();
     };
