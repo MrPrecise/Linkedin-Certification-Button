@@ -89,10 +89,6 @@
       addToLinkedIn();
     };
 
-    buttonSection.onclick = function () {
-      addToLinkedIn();
-    };
-
     /**
      * Opens the LinkedIn in new tab with your certification information filled in
      */

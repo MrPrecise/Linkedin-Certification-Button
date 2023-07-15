@@ -31,9 +31,11 @@
       /**
        * Selecting the coursename and save it as string
        */
-      let courseName = document.querySelector(
-        "body > div.container.main-content > div > div.col-12.my-0.noselect > figure > div > div.w-100.d-flex > div > div > h1 > em"
-      ).innerHTML;
+      let courseName = document
+        .querySelector(
+          "body > div.wrapper > div > div.main > article > div.course-title > div > h4"
+        )
+        .getInnerHTML();
 
       /**
        *
@@ -47,9 +49,9 @@
       const name = "name=" + courseName + "&";
 
       /**
-       * Save organizationId=3130543& as string (3130543 Is Real Python Orginization ID on LinkedIn)
+       * Save organizationId=3130543& as string (3130543 Is Zenva Orginization ID on LinkedIn)
        */
-      const organizationId = "organizationId=" + 3130543 + "&";
+      const organizationId = "organizationId=" + 3228633 + "&";
 
       /**
        * Save issueYear= and year parsed in by date .getFullYear() will return only the year, and save it  as string for the final query
@@ -64,22 +66,38 @@
 
       /**
        * Save certId= and the certification ID, then save it as string for the final query
-       * "window.location.href.split("/").findLast((y) => y" Splits the URL and keep the last part which would be the ID
+       * "querySelector().split("/").findLast((y) => y" Splits the URL and keep the last part which would be the ID
+       *   Since Zenva don't have their own page for your certifications, the URL is taken from the button that brings you to the URL
        * Example: https://academy.zenva.com/certificate/123456789abcd => 123456789abcd
        */
       const certId =
-        "certId=" + window.location.href.split("/").findLast((y) => y) + "&";
+        "certId=" +
+        document
+          .querySelector(
+            "body > div.wrapper > div > div.main > article > div.course-meta > p > a.btn.course_page-view-certificate"
+          )
+          .getAttribute("href")
+          .split("/")
+          .findLast((y) => y) +
+        "&";
 
       /**
-       * Save certUrl=url& as string for the final query
+       * Save certUrl=querySelector()& as string for the final query
+       * Since Zenva don't have their own page for your certifications, the URL is taken from the button that brings you to the URL
        */
-      const certUrl = "certUrl=" + window.location.href;
+      const certUrl =
+        "certUrl=" +
+        document
+          .querySelector(
+            "body > div.wrapper > div > div.main > article > div.course-meta > p > a.btn.course_page-view-certificate"
+          )
+          .getAttribute("href");
 
       /**
-       * Finds the button container div for Real Python where the buttons for sharing and downloading your certificates
+       * Finds the button container div for Zenva where the buttons for sharing and downloading your certificates
        */
       var buttonSection = document.querySelector(
-        "body > div.container.main-content > div > div.col-md-11.col-lg-8.article > div.text-center.my-3.d-print-none > span"
+        "body > div.wrapper > div > div.main > article > div.course-meta > p"
       );
 
       /**
@@ -87,12 +105,8 @@
        */
       buttonSection.insertAdjacentHTML(
         "afterbegin",
-        `<a class="mr-1 btn btn-sm badge-linkedin text-light mb-1"><i class="mr-1 fa fa-linkedin text-light"></i>Add to LinkedIn</a>`
+        `<a class="btn course_page-view-certificate" target="_blank" title="View Certificate">Add to LinkedIn</a><span> </span>`
       );
-      buttonSection.onclick = function () {
-        addToLinkedIn();
-      };
-
       buttonSection.onclick = function () {
         addToLinkedIn();
       };
