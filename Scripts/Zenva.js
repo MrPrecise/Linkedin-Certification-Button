@@ -11,7 +11,8 @@
 
 (function () {
   /**
-   * Making sure everything is loaded before using the script
+   * Making sure the whole page is loaded before using the script by running the window.onload()
+   * This ensures no information is not lost in the transfer
    */
   window.onload = (event) => {
     /**
@@ -30,6 +31,7 @@
     ) {
       /**
        * Selecting the coursename and save it as string
+       * The query selecter select the div containing the name of the course
        */
       let courseName = document
         .querySelector(
