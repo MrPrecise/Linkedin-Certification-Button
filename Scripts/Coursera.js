@@ -5,6 +5,7 @@
 // @description  Adds a button on your coursera accomplishments page for spesific certifications. This button when clicked takes information from the site and adds it to the Linkedin Certification
 // @author       MrPrecise
 // @match        https://www.coursera.org/account/accomplishments/verify/*
+// @match        https://www.coursera.org/account/accomplishments/professional-cert/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=coursera.org
 // @homepageURL  https://github.com/MrPrecise/Linkedin-Certification-Button/
 // ==/UserScript==
