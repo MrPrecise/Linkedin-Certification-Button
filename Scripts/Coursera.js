@@ -6,6 +6,7 @@
 // @author       MrPrecise
 // @match        https://www.coursera.org/account/accomplishments/verify/*
 // @match        https://www.coursera.org/account/accomplishments/professional-cert/*
+// @match        https://www.coursera.org/account/accomplishments/specialization/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=coursera.org
 // @homepageURL  https://github.com/MrPrecise/Linkedin-Certification-Button/
 // ==/UserScript==
