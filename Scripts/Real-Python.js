@@ -89,7 +89,7 @@
      * Finds the button container div for Real Python where the buttons for sharing and downloading your certificates
      */
     var buttonSection = document.querySelector(
-      "body > div.container.main-content > div > div.col-md-11.col-lg-8.article > div.text-center.my-3.d-print-none > span"
+      "body > div.container.main-content > div > div.col-md-11.col-lg-8.article > div.text-center.my-3.d-print-none > div > span"
     );
 
     /**
